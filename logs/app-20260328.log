@@ -1,0 +1,14 @@
+2026-03-28 08:11:44.050 +03:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-28 08:11:44.251 +03:00 [INF] Creating key {cb0e9342-4353-47a7-8a4a-6db85cba55df} with creation date 2026-03-28 05:11:44Z, activation date 2026-03-28 05:11:44Z, and expiration date 2026-06-26 05:11:44Z.
+2026-03-28 08:11:44.302 +03:00 [INF] Writing data to file 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys\key-cb0e9342-4353-47a7-8a4a-6db85cba55df.xml'.
+2026-03-28 08:11:44.481 +03:00 [WRN] The WebRootPath was not found: C:\Users\Admin\Downloads\POS_API\POS_API\Astrol_POS_API\wwwroot. Static files may be unavailable.
+2026-03-28 08:11:44.670 +03:00 [INF] Now listening on: http://localhost:5244
+2026-03-28 08:11:44.682 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-28 08:11:44.699 +03:00 [INF] Hosting environment: Development
+2026-03-28 08:11:44.703 +03:00 [INF] Content root path: C:\Users\Admin\Downloads\POS_API\POS_API\Astrol_POS_API
+2026-03-28 08:16:45.837 +03:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-28 08:16:46.008 +03:00 [WRN] The WebRootPath was not found: C:\Users\Admin\Downloads\POS_API\POS_API\Astrol_POS_API\wwwroot. Static files may be unavailable.
+2026-03-28 08:16:46.051 +03:00 [INF] Now listening on: http://localhost:5244
+2026-03-28 08:16:46.062 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-28 08:16:46.064 +03:00 [INF] Hosting environment: Development
+2026-03-28 08:16:46.065 +03:00 [INF] Content root path: C:\Users\Admin\Downloads\POS_API\POS_API\Astrol_POS_API

@@ -1,0 +1,36 @@
+2026-03-29 08:50:08.095 +03:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-29 08:50:08.497 +03:00 [WRN] The WebRootPath was not found: C:\Users\Admin\Downloads\POS_API\POS_API\Astrol_POS_API\wwwroot. Static files may be unavailable.
+2026-03-29 08:50:09.027 +03:00 [INF] Now listening on: http://localhost:5244
+2026-03-29 08:50:09.059 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-29 08:50:09.082 +03:00 [INF] Hosting environment: Development
+2026-03-29 08:50:09.461 +03:00 [INF] Content root path: C:\Users\Admin\Downloads\POS_API\POS_API\Astrol_POS_API
+2026-03-29 09:22:59.908 +03:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-29 09:23:00.147 +03:00 [WRN] The WebRootPath was not found: C:\Users\Admin\Downloads\POS_API\POS_API\Astrol_POS_API\wwwroot. Static files may be unavailable.
+2026-03-29 09:23:00.197 +03:00 [INF] Now listening on: http://localhost:5244
+2026-03-29 09:23:00.216 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-29 09:23:00.217 +03:00 [INF] Hosting environment: Development
+2026-03-29 09:23:00.218 +03:00 [INF] Content root path: C:\Users\Admin\Downloads\POS_API\POS_API\Astrol_POS_API
+2026-03-29 10:05:40.198 +03:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-29 10:05:40.436 +03:00 [WRN] The WebRootPath was not found: C:\Users\Admin\Desktop\POS_API\Astrol_POS_API\wwwroot. Static files may be unavailable.
+2026-03-29 10:05:40.502 +03:00 [INF] Now listening on: http://localhost:5244
+2026-03-29 10:05:40.516 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-29 10:05:40.518 +03:00 [INF] Hosting environment: Development
+2026-03-29 10:05:40.521 +03:00 [INF] Content root path: C:\Users\Admin\Desktop\POS_API\Astrol_POS_API
+2026-03-29 10:05:46.679 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/ - null null
+2026-03-29 10:05:46.832 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/ - 301 0 null 156.3217ms
+2026-03-29 10:05:46.861 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/index.html - null null
+2026-03-29 10:05:47.008 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/index.html - 200 null text/html;charset=utf-8 147.1122ms
+2026-03-29 10:05:47.078 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/swagger-ui.css - null null
+2026-03-29 10:05:47.086 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/swagger-ui-bundle.js - null null
+2026-03-29 10:05:47.098 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/swagger-ui-standalone-preset.js - null null
+2026-03-29 10:05:47.175 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-03-29 10:05:47.283 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-03-29 10:05:47.297 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-03-29 10:05:47.383 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/swagger-ui.css - 200 152034 text/css 304.9522ms
+2026-03-29 10:05:47.385 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/swagger-ui-standalone-preset.js - 200 230280 text/javascript 287.2603ms
+2026-03-29 10:05:47.398 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/swagger-ui-bundle.js - 200 1456926 text/javascript 312.0734ms
+2026-03-29 10:05:47.731 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/swagger/v1/swagger.json - null null
+2026-03-29 10:05:47.799 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5244/favicon-32x32.png - null null
+2026-03-29 10:05:48.022 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-03-29 10:05:48.082 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/favicon-32x32.png - 200 628 image/png 283.3666ms
+2026-03-29 10:05:48.566 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5244/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 835.5371ms
