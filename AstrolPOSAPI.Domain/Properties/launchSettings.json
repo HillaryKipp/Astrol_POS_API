@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Profile 1": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\stephen.bett\\Desktop\\Projects\\Astrol POS\\POS_API\\ASTROL_POS_API.sln",
+      "nativeDebugging": true
+    },
+    "Profile 2": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\stephen.bett\\Desktop\\Projects\\Astrol POS\\POS_API\\Astrol_POS_API\\Astrol_POS_API.WebAPI.csproj",
+      "nativeDebugging": true
+    }
+  }
+}

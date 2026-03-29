@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Astrol_POS_API.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+937de4b28cffd6e0f6883f068a2939483c28ad9e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Astrol_POS_API.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Astrol_POS_API.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

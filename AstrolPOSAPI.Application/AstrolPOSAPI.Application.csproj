@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>12.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="16.1.1" />
+    <PackageReference Include="FluentValidation" Version="12.1.0" />
+    <PackageReference Include="MediatR" Version="13.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Features\Company\Commands\DeleteCompany\" />
+    <Folder Include="Features\Company\Commands\UpdateCompany\" />
+    <Folder Include="Features\Company\DTOs\" />
+    <Folder Include="Features\Company\Validators\" />
+    <Folder Include="Features\Company\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AstrolPOSAPI.Domain\AstrolPOSAPI.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

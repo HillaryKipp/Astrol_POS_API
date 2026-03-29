@@ -1,0 +1,88 @@
+trigger:
+- develop
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Release'
+
+stages:
+- stage: BuildAndTest
+  jobs:
+  - job: Build
+    steps:
+    - task: UseDotNet@2
+      inputs:
+        packageType: 'sdk'
+        version: '8.x'
+    - script: dotnet restore
+      displayName: 'Restore'
+    - script: dotnet build --configuration $(buildConfiguration)
+      displayName: 'Build'
+  - job: Test
+    dependsOn: Build
+    steps:
+    - script: dotnet test --configuration $(buildConfiguration) --no-build
+      displayName: 'Run Tests'
+
+- stage: SecurityScan
+  dependsOn: BuildAndTest
+  jobs:
+  - job: SAST
+    steps:
+    - script: echo "Running Security Scan (e.g., Snyk or WhiteSource)..."
+    # - task: SnykSecurityScan@1
+    #   inputs:
+    #     serviceConnectionEndpoint: 'snyk-token'
+
+- stage: Dockerize
+  dependsOn: BuildAndTest
+  condition: succeeded()
+  jobs:
+  - job: PushImage
+    steps:
+    - task: Docker@2
+      displayName: 'Build and Push API Image'
+      inputs:
+        containerRegistry: 'ACR-Connection' # REPLACE with your Service Connection name
+        repository: 'astrol-pos-api'
+        command: 'buildAndPush'
+        Dockerfile: '**/Dockerfile'
+        tags: |
+          $(Build.BuildId)
+          latest
+
+- stage: DatabaseMigration
+  dependsOn: BuildAndTest
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+  jobs:
+  - job: Bundle
+    steps:
+    - task: UseDotNet@2
+      inputs:
+        packageType: 'sdk'
+        version: '8.x'
+    - script: |
+        dotnet tool install --global dotnet-ef
+        dotnet ef migrations bundle --project Astrol_POS_API/Astrol_POS_API.WebAPI.csproj --startup-project Astrol_POS_API/Astrol_POS_API.WebAPI.csproj --self-contained -r linux-x64 -o $(Build.ArtifactStagingDirectory)/efbundle
+      displayName: 'Generate Migration Bundle'
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)/efbundle'
+        ArtifactName: 'migration-bundle'
+        publishLocation: 'Container'
+
+- stage: DeployToAzure
+  dependsOn: [Dockerize, DatabaseMigration]
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+  jobs:
+  - deployment: Deploy
+    environment: 'Production'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - script: echo "Deploying to Azure App Service / AKS..."
+            displayName: 'Azure Deployment Placeholder'
